@@ -4,6 +4,8 @@
 We will be querying the FoodData Central API with an ingredient to retrieve a list of the ten most relevant foods that include that ingredient.
 
 First, sign up for an API key here: https://fdc.nal.usda.gov/api-key-signup.html
+My API key: yhDafOodE0ip7xhWg4bUbppWfvaPoALxv340AFLh
+
 
 The documentation for the API can be found here: https://fdc.nal.usda.gov/api-guide.html
 
