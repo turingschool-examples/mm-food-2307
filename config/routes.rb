@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root "welcome#index"
-  get '/food', to: "food#index", as: 'foods'
+  get '/foods', to: "foods#index", as: 'foods'
 end
