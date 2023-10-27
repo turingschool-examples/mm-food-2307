@@ -1,0 +1,17 @@
+<h1>Foods</h1>
+
+<h3>Count of search results: <%= @total_results %></h3>
+
+<% @foods.each do |food| %>
+<section id="food-<%= food.code%>">
+  <ul>
+    <li>GTIN/UPC code: <%= food.code %><br>
+    <li>Description: <%= food.description %><br>
+    <li>Brand owner: <%= food.brand_owner %><br>
+    <li>Ingredients: <%= food.ingredients %><br>
+  </ul>
+</section>
+<br>
+<br>
+<% end %>
+
