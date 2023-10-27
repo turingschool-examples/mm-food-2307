@@ -5,7 +5,8 @@ class FoodDataService
     JSON.parse(response.body, symbolize_names: true)
   end
   def food_search(search_query)
-    get_url("/fdc/v1/foods/search?api_key=#{Rails.application.credentials.food_data_central[:key]}&query=#{search_query}")[:foods].first(10)
+    get_url("/fdc/v1/foods/search?api_key=#{Rails.application.credentials.food_data_central[:key]}&query=#{search_query}&dataType=Branded")
+
   end
 
   def connection
