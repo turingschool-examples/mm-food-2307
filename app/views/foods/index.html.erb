@@ -1,4 +1,5 @@
-<h3>Total search items returned: <%= @facade.total_results_from_search %></h3>
+<h3>Search Term: <%= @facade.search_query.capitalize %></h3>
+<h3>Total Search Items Returned: <%= @facade.total_results_from_search %></h3>
 <% @facade.food_search.each do |food| %>
   <ul>
   <li><p>GTIN/UPC Code: <%= food.number %></p>
