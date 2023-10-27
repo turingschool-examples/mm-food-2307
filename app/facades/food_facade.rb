@@ -6,3 +6,4 @@ class FoodFacade
       Food.new(food_data, total_hits)
     end
   end
+end
