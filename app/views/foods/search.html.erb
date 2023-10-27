@@ -1,0 +1,19 @@
+<h2><%= @facade.query %> Search</h2>
+
+<p>Total Results: <%= @facade.total_results %></p>
+
+<div id ='first10'>
+  <h4>First 10 Results:</h4>
+
+  <ol>
+    <% @facade.first10.each do |food| %>
+      <li><%= food.description %>
+        <ul>
+          <li>GTIN/UPC Code: <%= food.gtin_upc %></li>
+          <li>Brand Owner: <%= food.brand_owner %></li>
+          <li>Ingredients: <%= food.ingredients %></li>
+        </ul>
+      </li>
+    <% end %>
+  </ol>
+</div>
