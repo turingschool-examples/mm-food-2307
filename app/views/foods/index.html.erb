@@ -1,0 +1,17 @@
+<h1> Foods </h1>
+
+<h2>Total Items: <%= @total_hits%></h2>
+<h3> First Ten Items: </h3>
+
+<% if @foods.present? %>
+  <% @foods.first(10).each do |food| %>
+    <p><%= food.description %></p>
+    <p>GTIN: <%= food.upc %></p>
+    <p>Brand: <%= food.brand%></p>
+    <p>Ingredients: <%= food.ingredients %></p>
+    <br>
+    <hr>
+  <% end %>
+<% else %>
+  <p>There are no foods</p>
+<% end %>
