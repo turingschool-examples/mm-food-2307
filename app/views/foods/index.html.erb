@@ -1,0 +1,11 @@
+<h2>Searched: "<%= @searched%>"</h2>
+<br>
+<ul style="list-style-type:none;">
+  <% @foods.each do |food| %>
+    <li><small><%= food.code %></small></li>
+    <li><strong><%= food.description %></strong></li>
+    <li><%= food.brand %></li>
+    <li><%= food.ingredients %></li>
+    <hr>
+  <% end %>
+</ul>

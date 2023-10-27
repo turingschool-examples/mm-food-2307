@@ -1,7 +1,7 @@
 class FoodService
   def conn
     Faraday.new(url: 'https://api.nal.usda.gov/fdc/v1/') do |f|
-      f.params['X-Api_Key'] = Rails.application.credentials.food_data[:key]
+      f.headers['X-Api-Key'] = Rails.application.credentials.food_data[:key]
     end
   end
 

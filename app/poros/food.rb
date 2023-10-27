@@ -6,8 +6,8 @@ class Food
 
   def initialize(info)
     @code = info[:gtinUpc]
-    @description = info[:description]
-    @brand = info[:brandOwner]
+    @description = info[:description].capitalize
+    @brand = info[:brandName] || info[:brandOwner]
     @ingredients = info[:ingredients]
   end
 end
