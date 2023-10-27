@@ -12,7 +12,6 @@ class Food
   end
 
   private
-
   def brand_select(name, owner)
     if name
       name.titleize
