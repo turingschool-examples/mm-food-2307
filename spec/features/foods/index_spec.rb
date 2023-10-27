@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Foods Index Page" do
-  describe "As a visitor" do
+  describe "As a visitor", :vcr do
     describe "When I submit a search from the root url" do
       it "I am routed to the foods index page" do
 
@@ -14,7 +14,7 @@ RSpec.describe "Foods Index Page" do
       end
     end
 
-    it "I see a number representing the total results found" do
+    it "I see a number representing the total results found", :vcr do
 
       visit "/"
 
@@ -26,7 +26,7 @@ RSpec.describe "Foods Index Page" do
       end
     end
 
-    it "There are 10 foods matching the search displayed witht their attributes" do
+    it "There are 10 foods matching the search displayed witht their attributes", :vcr do
 
       visit "/"
 
