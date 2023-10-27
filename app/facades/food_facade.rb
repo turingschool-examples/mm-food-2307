@@ -7,4 +7,9 @@ class FoodFacade
       FoodData.new(food_data)
     end
   end
+
+  def self.total_hits(ingredients)
+    service = FoodDataService.new
+    service.total_hits(ingredients)
+  end
 end

@@ -12,7 +12,6 @@ class FoodDataService
   def search_ingredients(ingredients)
     response = conn.get("foods/search") do |req|
       req.params["query"] = ingredients
-      req.params["pageSize"] = 10
     end
 
     if response.success?
@@ -22,6 +21,10 @@ class FoodDataService
     end
   end
 
+  def total_hits(ingredients)
+    response = search_ingredients(ingredients)
+    response[:totalHits]
+  end
   private
 
   def parsed_response(response)
