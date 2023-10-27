@@ -65,4 +65,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
+  config.filter_sensitive_data("food_data_key") {
+    Rails.application.credentials.food_data[:key]
+  }
 end
