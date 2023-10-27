@@ -1,14 +1,16 @@
 class FoodFacade
-  def initialize(query)
-    @query = query
+
+  def self.search(query)
+    service = FoodService.new
+    response = service.search(query)
+
+    response[:foods].map do |food|
+      Food.new(food)
+    end
   end
 
-  def all_foods
-
-    data = FoodService.new.foods_with_query(query)
-
-    foods = data[:foods].map do |food_data|
-      Food.new(food_data)
-    end
+  def self.total_hits(query)
+    service = FoodService.new
+    service.total_hits(query)
   end
 end
