@@ -1,4 +1,6 @@
 class FoodsFacade
+  attr_reader :query
+  
   def initialize(query = nil)
     @query = query
   end
@@ -7,8 +9,8 @@ class FoodsFacade
     FoodsService.new.search(@query)[:totalHits]
   end
 
-  def search
-    data = FoodsService.new.search(@query)
+  def first10
+    data = FoodsService.new.search(@query)[:foods][0..9]
     data.map do |food|
       Food.new(food)
     end

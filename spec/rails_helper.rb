@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -65,6 +68,6 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
-  config.filter_sensitive_data('<FOOD_DATA_API_KEY>') { ENV['FOOD_DATA_API_KEY'] }
+  config.filter_sensitive_data('<FOOD_DATA_API_KEY>') { Rails.application.credentials.food_data[:key] }
   config.configure_rspec_metadata!
 end

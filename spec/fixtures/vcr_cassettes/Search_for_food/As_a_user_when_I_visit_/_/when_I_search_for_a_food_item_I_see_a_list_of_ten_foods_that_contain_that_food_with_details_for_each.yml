@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Oct 2023 16:09:55 GMT
+      - Fri, 27 Oct 2023 16:09:57 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,7 +31,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '0'
+      - '1'
       Set-Cookie:
       - ApplicationGatewayAffinity=50338e381d6b5be775f36f07abdc605f; Path=/
       - ApplicationGatewayAffinityCORS=50338e381d6b5be775f36f07abdc605f; Path=/; SameSite=None;
@@ -44,15 +44,15 @@ http_interactions:
       Via:
       - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Api-Umbrella-Request-Id:
-      - cbe7j3irltmgvq22hnlg
+      - cbe7j3vnn3ou48pm3hj0
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3586'
+      - '3584'
       X-Vcap-Request-Id:
-      - f386730f-d588-4262-77be-dd9974355a37
+      - b1513c42-403b-4c91-7f85-d9977ce6b692
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -3832,7 +3832,7 @@ http_interactions:
         made to foods, including moisture changes","id":1002,"foodAttributes":[{"value":"Moisture
         change: 0%","id":2666943}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":55556,"SR
         Legacy":601,"Survey (FNDDS)":494,"Foundation":9,"Experimental":3},"nutrients":{}}}'
-  recorded_at: Fri, 27 Oct 2023 16:09:56 GMT
+  recorded_at: Fri, 27 Oct 2023 16:09:57 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=<FOOD_DATA_API_KEY>&query=sweet%20potatoes
@@ -3852,7 +3852,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Oct 2023 16:09:56 GMT
+      - Fri, 27 Oct 2023 16:09:58 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -3864,10 +3864,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '0'
+      - '1'
       Set-Cookie:
-      - ApplicationGatewayAffinity=50338e381d6b5be775f36f07abdc605f; Path=/
-      - ApplicationGatewayAffinityCORS=50338e381d6b5be775f36f07abdc605f; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=1fdae0f824bf43bf7d058765be26516f; Path=/
+      - ApplicationGatewayAffinityCORS=1fdae0f824bf43bf7d058765be26516f; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -3877,15 +3877,15 @@ http_interactions:
       Via:
       - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Api-Umbrella-Request-Id:
-      - cbe7j3shqah5hpbuhr0g
+      - cbe7j46chtp2mh4067e0
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3585'
+      - '3583'
       X-Vcap-Request-Id:
-      - b827cad4-4cd6-4188-65e8-f3c24517dec8
+      - 21df2004-956b-4437-5055-0bd3ff13ff84
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -7665,5 +7665,5 @@ http_interactions:
         made to foods, including moisture changes","id":1002,"foodAttributes":[{"value":"Moisture
         change: 0%","id":2666943}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":55556,"SR
         Legacy":601,"Survey (FNDDS)":494,"Foundation":9,"Experimental":3},"nutrients":{}}}'
-  recorded_at: Fri, 27 Oct 2023 16:09:56 GMT
+  recorded_at: Fri, 27 Oct 2023 16:09:58 GMT
 recorded_with: VCR 6.2.0
