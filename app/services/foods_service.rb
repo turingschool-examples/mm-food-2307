@@ -3,7 +3,7 @@ class FoodsService
   @api_key = Rails.application.credentials.fdc[:key]
 
   def conn
-    Fadaday.new(
+    Faraday.new(
       url: "https://api.nal.usda.gov/fdc/v1/"
     )
   end
@@ -13,7 +13,7 @@ class FoodsService
     JSON.parse(temp_data.body, symbolize_name: true)
   end
 
-  def find_ingredient(food)
+  def food_search(food)
     get_url("foods/search?api_key=#{@api_key}&query=#{food}")
   end
 end
