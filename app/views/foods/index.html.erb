@@ -1,0 +1,15 @@
+<h1>List of Food... yum!</h1>
+
+<p>Total hits for "<%= params[:q] %>": <%= @facade.total_hits %></p>
+
+<ol>
+  <% @facade.foods.each do |food| %>
+    <li class="food-item">
+      Description: <%= food.description %><br>
+      GTIN/UPC Code: <%= food.gtin_code %><br>
+      Brand Owner: <%= food.brand_owner ? food.brand_owner : "No Data" %><br>
+      Ingredients: <%= food.ingredients ? food.ingredients : "No Data" %>
+    </li>
+    <br>
+  <% end %>
+</ol>
