@@ -1,0 +1,9 @@
+
+<h1>Total hits: <%= @foods.first.total_hits %> </h1>
+
+<% @foods.each do |food| %>
+  <%= food.description %> |
+  <%= food.gtin_upc %> |
+  <%= food.brand_owner %> |
+  <%= food.ingredients%> </br>
+<% end %>
