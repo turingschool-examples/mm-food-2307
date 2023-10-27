@@ -25,7 +25,7 @@ RSpec.describe 'foods index page' do
       fill_in 'q', with: 'sweet potatoes'
       click_button 'Search'
       expect(current_path).to eq('/foods')
-      expect(page).to have_content("Total search items returned: 55556")
+      expect(page).to have_content("Total Search Items Returned: 55556")
       expect(page).to have_content("Description: SWEET POTATOES")
       expect(page).to have_content("GTIN/UPC Code: 8901020020844")
       expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
