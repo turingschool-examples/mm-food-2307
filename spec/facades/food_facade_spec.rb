@@ -5,6 +5,7 @@ RSpec.describe FoodFacade do
     facade = FoodFacade.new("sweet potatoes")
 
     expect(facade).to be_an_instance_of FoodFacade
-    expect(facade.items).to be_an Array
+    expect(facade.total_hits).to be_an Integer
+    expect(facade.foods).to be_an Array
   end
 end
