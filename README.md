@@ -5,6 +5,8 @@ We will be querying the FoodData Central API with an ingredient to retrieve a li
 
 First, sign up for an API key here: https://fdc.nal.usda.gov/api-key-signup.html
 
+API Key: 84yVdX9pFpF9dBegbb1r3KfnZx1j1o3I3ii3hQ1k
+
 The documentation for the API can be found here: https://fdc.nal.usda.gov/api-guide.html
 
 Make sure you take the time to read the API documentation carefully. 
