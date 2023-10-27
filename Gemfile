@@ -53,20 +53,17 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "pry"
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '~> 5.0'
   gem "capybara"
   gem "simplecov"
   gem "rspec-rails"
+  gem "launchy"
 
 end
 
 group :test do
-  gem "rspec-rails"
-  gem "capybara"
-  gem "launchy"
-  gem "simplecov"
-  gem 'pry'
-  gem 'shoulda-matchers'
+  gem 'vcr'
+  gem 'webmock'
 
 end
 
@@ -79,10 +76,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  group :test do
-    gem 'vcr'
-    gem 'webmock'
-  end
+
 end
 gem 'faraday'
 
