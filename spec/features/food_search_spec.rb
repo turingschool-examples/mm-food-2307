@@ -21,7 +21,7 @@ RSpec.describe "Food Search", type: :feature do
               expect(page).to have_content("GTIN/UPC code: 8901020020844")
               expect(page).to have_content("Description: SWEET POTATOES")
               expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
-              expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES")
+              expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES.")
             end
 
             within("#2440684") do
