@@ -1,0 +1,9 @@
+<h3 class="results">Total results found: <%= @count %></h3>
+<% @foods.each do |food| %>
+  <section class="UPC<%= food.gtin %>">
+  <h3>GTIN/UPC: <%= food.gtin %></h3>
+    <p>Description: <%= food.description %></p>
+    <p>Brand: <%= food.brand %></p>
+    <p>Ingredients: <%= food.ingredients %></p>
+  </section>
+<% end %>
