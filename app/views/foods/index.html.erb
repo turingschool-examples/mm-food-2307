@@ -1,0 +1,13 @@
+<center><h3>Search Results: <%= @result_count %></h3></center>
+
+<center>
+  <% @foods.each do |food| %>
+    <section id=<%= food[:fdcId] %>>
+      <h3>GTIN/UPC code: <%= food[:gtinUpc] %></h3>
+      <p>Description: <%= food[:description] %></p>
+      <p>Brand Owner: <%= food[:brandOwner] %></p>
+      <p>Ingredients: <%= food[:ingredients] %></p>
+      <p>~~~~</p>
+    </section>
+  <% end %>
+</center>
