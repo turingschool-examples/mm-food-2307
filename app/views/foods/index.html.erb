@@ -1,0 +1,11 @@
+<h2>First 10 Results for '<%= "#{params['q']}" %>'</h2>
+<h5>Total Results: <%=  %></h5>
+
+<% @foods.each do |food| %>
+  <div class="<% food.id %>">
+    <p><b>Name: </b><%= food.description %></p>
+    <p>ID: <%= food.id %></p>
+    <p>Brand: <%= food.owner %></p>
+    <p>Ingredients: <%= food.ingredients %></p><br>
+  </div>
+<% end %>
