@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Oct 2023 16:21:00 GMT
+      - Fri, 27 Oct 2023 16:30:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -46,15 +46,15 @@ http_interactions:
       Via:
       - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Api-Umbrella-Request-Id:
-      - cbe7o5uk98bd7eh8ijcg
+      - cbe7sd60j1c7q78ggfbg
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3580'
+      - '3574'
       X-Vcap-Request-Id:
-      - b85fbfd0-0d6d-4ff3-4d95-0c4cb2cf9b62
+      - 5e3b7e2e-d7d3-47b8-4696-849174754cb2
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -3834,7 +3834,7 @@ http_interactions:
         made to foods, including moisture changes","id":1002,"foodAttributes":[{"value":"Moisture
         change: 0%","id":2666943}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":55556,"SR
         Legacy":601,"Survey (FNDDS)":494,"Foundation":9,"Experimental":3},"nutrients":{}}}'
-  recorded_at: Fri, 27 Oct 2023 16:21:00 GMT
+  recorded_at: Fri, 27 Oct 2023 16:30:14 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/fdc/v1/foods/search?query=sweet%20potatoes
@@ -3856,7 +3856,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Oct 2023 16:21:01 GMT
+      - Fri, 27 Oct 2023 16:30:15 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -3870,8 +3870,8 @@ http_interactions:
       Age:
       - '0'
       Set-Cookie:
-      - ApplicationGatewayAffinity=1fdae0f824bf43bf7d058765be26516f; Path=/
-      - ApplicationGatewayAffinityCORS=1fdae0f824bf43bf7d058765be26516f; Path=/; SameSite=None;
+      - ApplicationGatewayAffinity=50338e381d6b5be775f36f07abdc605f; Path=/
+      - ApplicationGatewayAffinityCORS=50338e381d6b5be775f36f07abdc605f; Path=/; SameSite=None;
         Secure
       Strict-Transport-Security:
       - max-age=31536000
@@ -3881,15 +3881,15 @@ http_interactions:
       Via:
       - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Api-Umbrella-Request-Id:
-      - cbe7o647qmvegngbo120
+      - cbe7sdbo8i8acrivikhg
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3579'
+      - '3573'
       X-Vcap-Request-Id:
-      - f0bf8589-2482-4c58-5a62-400b85e160b4
+      - 24116b59-c4a2-4416-6af4-5ad69c35743a
       X-Frame-Options:
       - sameorigin
       X-Content-Type-Options:
@@ -7669,5 +7669,5 @@ http_interactions:
         made to foods, including moisture changes","id":1002,"foodAttributes":[{"value":"Moisture
         change: 0%","id":2666943}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":55556,"SR
         Legacy":601,"Survey (FNDDS)":494,"Foundation":9,"Experimental":3},"nutrients":{}}}'
-  recorded_at: Fri, 27 Oct 2023 16:21:01 GMT
+  recorded_at: Fri, 27 Oct 2023 16:30:15 GMT
 recorded_with: VCR 6.2.0
