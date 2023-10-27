@@ -1,9 +1,13 @@
 class Food 
   attr_reader :id,
-              :name
+              :description,
+              :owner,
+              :ingredients
 
   def initialize(data)
-    @id = data['id']
-    @name = data['name']
+    @id = data['gtinUpc']
+    @description = data['description']
+    @owner = data['brandOwner']
+    @ingredients = data['ingredients']
   end
 end

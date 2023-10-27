@@ -3,7 +3,8 @@ class SearchFacade
     service = FoodsService.new
     return_data = service.food_search(food)
 
-    require 'pry';binding.pry
-    return_data
+    return_data["foods"].map do |food|
+      Food.new(food)
+    end
   end
 end

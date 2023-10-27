@@ -1,7 +1,5 @@
 class FoodsService
   
-  @api_key = Rails.application.credentials.fdc[:key]
-
   def conn
     Faraday.new(
       url: "https://api.nal.usda.gov/fdc/v1/"
@@ -14,6 +12,7 @@ class FoodsService
   end
 
   def food_search(food)
-    get_url("foods/search?api_key=#{@api_key}&query=#{food}")
+    api_key = Rails.application.credentials.fdc[:key]
+    get_url("foods/search?api_key=#{api_key}&query=#{food}")
   end
 end
