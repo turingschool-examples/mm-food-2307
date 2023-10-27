@@ -11,6 +11,6 @@ class FoodsService
   end
 
   def search_foods(search_value)
-    get_url("v1/foods/search?query=#{search_value}")
+    get_url("v1/foods/search?query=#{search_value}&pageSize=10")
   end
 end

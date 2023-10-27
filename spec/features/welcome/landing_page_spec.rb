@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Landing Page", type: :feature do
   describe "When I visit the landing page" do
-    it "I see a form to fill in and a search button that takes me to the /foods page" do
+    it "I see a form to fill in and a search button that takes me to the /foods page", :vcr do
       visit root_path
 
       expect(page).to have_content("Ingredient Search")
