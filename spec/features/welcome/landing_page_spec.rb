@@ -11,7 +11,7 @@ RSpec.describe "Landing Page", type: :feature do
 
       click_button :commit
 
-      expect(page).to have_current_path(foods_path)
+      expect(page).to have_current_path("/foods?q=&commit=Search")
     end
   end
 end
