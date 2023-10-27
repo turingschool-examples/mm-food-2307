@@ -35,5 +35,18 @@ RSpec.describe "Foods Index Page" do
 
       expect(all('section').count).to eq(10)
     end
+
+    it "The attributes for the 10 foods are displayed on the page", :vcr do
+      visit "/"
+
+      fill_in "q", with: "sweet potatoes"
+      click_on "Search"
+
+      within(".UPC8901020020844") do
+        expect(page).to have_content("Description: SWEET POTATOES")
+        expect(page).to have_content("Brand: NOT A BRANDED ITEM")
+        expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES.")
+      end
+    end
   end
 end
