@@ -1,4 +1,5 @@
 <h2>Searched: "<%= @searched%>"</h2>
+<h3>Results: <%= number_with_delimiter(@count, :delimiter => ',') %></h3>
 <br>
 <ul style="list-style-type:none;">
   <% @foods.each do |food| %>
